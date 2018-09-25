@@ -1,0 +1,87 @@
+.highlight {
+  padding: 10px 10px;
+  background-color: #f8f9fa !important;
+  overflow: auto;
+}
+
+.nav-link > a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.nav-link > a:hover {
+  color: #fff;
+}
+
+.sidebar {
+  background-color: #999;
+  text-align: center;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar h1 {
+  color: #333;
+}
+
+#nav-items {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#main-section {
+  margin: 1rem 3rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#main-doc {
+  position: absolute;
+  overflow: auto;
+  background-color: #fff;
+  top: 0;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  padding-top: 2rem;
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input:checked ~ #main-doc {
+  left: 0;
+}
+
+input:checked ~ label {
+  left: 0;
+}
+
+label {
+  z-index: 1;
+  position: fixed;
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  top: 0;
+  left: 250px;
+  background-color: rgba(153, 153, 153, 0.637);
+
+  -moz-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+#reference {
+  padding-bottom: 5rem;
+}
